@@ -169,3 +169,66 @@ p {
     overflow: hidden;
     background: var(--main-bg);
 }
+
+/* whatセクションのスタイル  */
+.what{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 100px;
+    gap: 80px;
+    background-color: var(--sub-bg);
+}
+.what .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.what .container{
+    width: 100%;
+    display: flex;
+    width: 100%;
+    gap: 45px;
+}
+.what .container .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.what .container .content .compair{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.content .title{
+    text-align: center;
+    width: 100%;
+    background: var(--main-bg);
+}
+.we,.other{
+    width: 100%;
+    padding: 20px;
+}
+.we,.other h2{
+    text-align: center;
+}
+.we,.other p{
+    font-size: 16px;
+}
+
+.we{
+    background: #EDCACA;
+}
+.other{
+    background: #CAD9ED;
+}
+
+.divider {
+    display: inline-block;
+    width: 3px;
+    background-color: #333;
+}
