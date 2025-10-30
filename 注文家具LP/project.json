@@ -1,0 +1,25 @@
+{
+  "name": "注文家具LP",
+  "version": "1.0.0",
+  "description": "オーダー家具店オオヤマのランディングページ",
+  "created": "2025-10-30",
+  "features": [
+    "レスポンシブデザイン",
+    "フローティングCTAボタン",
+    "脈動アニメーション",
+    "セクション別レイアウト",
+    "スクロール連動機能"
+  ],
+  "technologies": [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "Google Fonts (Noto Serif JP)"
+  ],
+  "browser_support": [
+    "Chrome",
+    "Firefox", 
+    "Safari",
+    "Edge"
+  ]
+}
