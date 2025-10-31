@@ -26,7 +26,7 @@
             <div class="img"><img src="./src/img/creating.png" alt="about image"></div>
             <div class="complain">
                 <div class="text">
-                    <h1><span class="accent">40年</span>の歴史と<span class="accent">3,200点</span>の実績。</h1>
+                    <h1><span class="accent">40年</span>の歴史と<span class="accent"><span id="countup-3200">0</span>点</span>の実績。</h1>
                     <p>オオヤマは創業から40年間、注文家具を専門に作り続けてきました。これまでに3,200点を超える家具をお客様のもとへお届けしています。職人5名、スタッフ8名の小さな工房ですが、丁寧な仕事と誠実な対応で信頼を積み重ねてきました。</p>
                 </div>
                 <div class="cards">
@@ -201,28 +201,70 @@
             <div class="title">
                 <h1>これまでに製作した家具の一例です</h1>
             </div>
-            <div class="gallery">
-                <div class="item">
-                    <img src="./src/img/example1.png" alt="">
+            <div class="slideshow-container">
+                <!-- 上段（左から右へ） -->
+                <div class="slideshow-track slideshow-track-top">
+                    <div class="slide-item"><img src="./src/img/example1.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example2.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example3.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example4.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example5.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example6.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example7.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example8.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example9.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example10.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example11.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example12.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example13.jpg" alt="制作実績"></div>
+                    <!-- 複製（無限ループ用） -->
+                    <div class="slide-item"><img src="./src/img/example1.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example2.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example3.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example4.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example5.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example6.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example7.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example8.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example9.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example10.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example11.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example12.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example13.jpg" alt="制作実績"></div>
                 </div>
-                <div class="item">
-                    <img src="./src/img/example2.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="./src/img/example3.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="./src/img/example4.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="./src/img/example5.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="./src/img/example6.png" alt="">
+                
+                <!-- 下段（右から左へ） -->
+                <div class="slideshow-track slideshow-track-bottom">
+                    <div class="slide-item"><img src="./src/img/example1.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example2.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example3.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example4.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example5.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example6.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example7.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example8.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example9.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example10.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example11.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example12.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example13.jpg" alt="制作実績"></div>
+                    <!-- 複製（無限ループ用） -->
+                    <div class="slide-item"><img src="./src/img/example1.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example2.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example3.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example4.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example5.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example6.png" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example7.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example8.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example9.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example10.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example11.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example12.jpg" alt="制作実績"></div>
+                    <div class="slide-item"><img src="./src/img/example13.jpg" alt="制作実績"></div>
                 </div>
             </div>
-        </section>
-        <section class="QA">
+        </section>        <section class="QA">
             <div class="text_area">
                 <div class="title">
                     <h1>よくあるご質問</h1>
