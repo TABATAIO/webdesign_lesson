@@ -317,11 +317,16 @@ p {
 }
 .introduce  .card img{
     width: 100%;
-    height: 75%;
+    height: 300px;
+    object-fit: cover;
     display: block;
 }
 .introduce  .card .text{
     height: 25%;
+    padding: 10px 15px;
+}
+.introduce  .card .text h2{
+    margin: 0;
 }
 
 /* voicesのスタイル */
@@ -550,4 +555,10 @@ p {
     70% {
         transform: scale(1);
     }
+}
+
+/* 数字のアクセントスタイル */
+.accent {
+    font-size: 48px;
+    font-weight: 700;
 }
