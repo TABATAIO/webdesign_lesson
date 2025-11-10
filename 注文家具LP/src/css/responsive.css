@@ -1,0 +1,525 @@
+/* ==================================================
+   Responsive Design - レスポンシブデザイン
+   ==================================================
+   タブレット・スマートフォン向けのスタイル調整
+   ================================================== */
+
+/* ================================================== 
+   Tablet Styles - タブレット対応 (768px以下)
+   ================================================== */
+@media (max-width: 768px) {
+    /* 基本フォントサイズ調整 */
+    body {
+        font-size: 18px;
+        background-color: var(--main-bg);
+    }
+
+    h1 {
+        font-size: 23px;
+        margin: 0;
+    }
+    
+    h2 {
+        font-size: 16px;
+        margin: 0;
+    }
+    
+    p {
+        font-size: 12px;
+        margin: 0px;
+    }
+
+    /* 数字のアクセントスタイル */
+    .accent {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    
+    /* ファーストビュー */
+    .fv {
+        min-height: auto;
+    }
+    
+    .hero {
+        width: 100%;
+        min-height: 300px;
+        overflow: auto;
+    }
+    
+    .fv .text_area {
+        width: 100%;
+        padding: 40px 30px;
+        gap: 40px;
+        background-image: none;
+    }
+    
+    .main_title {
+        font-size: 32px;
+        width: 100%;
+        position: static;
+        border-radius: 15px 0 0 15px;
+    }
+    
+    .sub_title {
+        font-size: 24px;
+        width: 100%;
+        position: static;
+        border-radius: 15px 0 0 15px;
+    }
+    
+    .cta_button {
+        font-size: 28px;
+        padding: 12px 30px;
+        border-radius: 15px;
+    }
+    
+    /* aboutセクション */
+    .about {
+        min-height: auto;
+    }
+
+    .about .img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .complain {
+        width: 100%;
+        padding: 60px 30px;
+    }
+    
+    .complain .cards {
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .complain .card {
+        width: 100px;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .complain .card img {
+        width: 100%;
+    }
+    
+    /* whatセクション */
+    .what {
+        padding: 60px 30px;
+        gap: 60px;
+    }
+    
+    .what .container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .we,.other{
+        text-align: center;
+    }
+    
+    /* whyセクション */
+    .why {
+        padding: 60px 30px;
+        gap: 20px;
+    }
+    
+    .why .cards {
+        gap: 30px;
+        align-items: center;
+    }
+    
+    .why .card {
+        max-width: 400px;
+    }
+    .why .card img {
+        object-fit: cover;
+    }
+    
+    /* introduceセクション */
+    .introduce {
+        padding: 60px 30px;
+        gap: 60px;
+    }
+    
+    .introduce .cards {
+        gap: 30px;
+        align-items: center;
+    }
+    
+    .introduce .card {
+        max-width: 400px;
+    }
+    
+    /* voicesセクション */
+    .voices {
+        padding: 60px 30px;
+        gap: 60px;
+    }
+
+    .voices .container {
+        flex-wrap: nowrap;
+        overflow: scroll;
+        border-radius: 15px;
+        justify-content: left;
+    }
+    
+    .voices .container .content {
+        width: 45%;
+        min-width: 300px;
+    }
+    
+    /* QAセクション */
+    .QA {
+        flex-direction: column;
+        padding: 60px 30px;
+    }
+
+    .QA .text_area{
+        padding-top: 0px;
+    }
+    
+    .QA img {
+        display: none;
+    }
+    
+    /* CTAセクション */
+    .CTA {
+        padding: 60px 30px;
+        border-radius: 50px 50px 0 0;
+    }
+    
+    /* 無限スライドショー */
+    .slideshow-container {
+        height: 400px;
+        gap: 15px;
+    }
+    
+    .slideshow-track {
+        height: 180px;
+    }
+    
+    .slide-item {
+        width: 200px;
+        height: 180px;
+        margin-right: 15px;
+    }
+    
+    .slideshow-track-top {
+        animation: slideLeft 40s linear infinite;
+    }
+    
+    .slideshow-track-bottom {
+        animation: slideRight 40s linear infinite;
+    }
+    
+    /* フローティングCTA */
+    .floating-cta {
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .floating-cta-button {
+        padding: 16px 28px;
+        font-size: 18px;
+        min-width: 160px;
+    }
+}
+
+/* ================================================== 
+   Mobile Styles - スマートフォン対応 (425px以下)
+   ================================================== */
+@media (max-width: 425px) {
+    /* 基本フォントサイズさらに調整 */
+    body {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 23px;
+        margin: 0;
+    }
+    
+    h2 {
+        font-size: 16px;
+        margin: 0;
+    }
+    
+    p {
+        font-size: 12px;
+        margin: 0px;
+    }
+
+    a{
+        font-size: 12px;
+        margin: 0px;
+    }
+
+    /* 数字のアクセントスタイル */
+    .accent {
+        font-size: 28px;
+        font-weight: 700;
+    }
+    
+    /* ファーストビュー */
+    .fv {
+        height: 80vh;
+        position: relative;
+    }
+    .hero {
+        min-height: 300px; /* 250px → 300px に増加 */
+    }
+    
+    .fv .text_area {
+        width: 70%;
+        position: absolute;
+        top: 170px;
+        right: 0;
+        padding: 50px 20px; /* 上下余白を増やして左右にもパディング */
+        gap: 5px;
+    }
+
+    .fv .text_area .title{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .main_title {
+        font-size: 24px; /* 24px → 26px に増加 */
+        line-height: 1.3; /* 行間を調整 */
+        background-color: #11ffee00;
+        color: var(--sub-bg);
+        margin-bottom: 0;
+        padding: 0;
+    }
+    
+    .sub_title {
+        font-size: 18px; /* 18px → 20px に増加 */
+        line-height: 1.4;
+        background-color: #11ffee00;
+        color: var(--sub-bg);
+        margin-bottom: 0;
+        padding: 0;
+    }
+    
+    .cta_btn{
+        margin-top: 10px;
+    }
+
+    .cta_button {
+        font-size: 18px; /* 16px → 18px に増加 */
+        padding: 12px 24px; /* パディングを増やして押しやすく */
+    }
+    
+    /* 全セクション共通パディング調整 */
+    .complain, .what, .why, .introduce, .voices, .CTA {
+        padding: 40px 15px;
+    }
+    
+    .QA {
+        padding: 40px 20px;
+    }
+
+    .about .img{
+        display: none;
+    }
+    
+    /* aboutセクションのカード */
+    .about{
+        width: 100%;
+    }
+
+    .complain{
+        width: 100%;
+        gap: 20px;
+    }
+
+    .complain .cards {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        padding: 0 50px;
+    }
+    
+    .complain .card {
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        padding: 0 10px 0 0;
+    }
+
+    .complain .card img {
+        height: 50px;
+        width: 50px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    .complain .card p {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        text-align: left;
+    }
+    
+    /* whatセクション */
+    .what .container {
+        gap: 20px;
+    }
+    
+    /* whyセクション */
+    .why{
+        padding: 40px 30px;
+    }
+
+    .why .cards {
+        gap: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0 30px;
+    }
+    
+    .why .card {
+        width: 100%;
+        flex-direction: row;
+        max-width: none;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .why .card img {
+        width: 40%;
+        height: auto;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+
+    .why .card .text {
+        flex: 1;
+        height: auto;
+        padding: 0;
+    }
+
+    .why .card .text h2 {
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .why .card .text p {
+        font-size: 14px;
+        text-align: left;
+        margin: 0;
+    }
+    
+    /* introduceセクション */
+    .introduce .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .introduce .card {
+        flex-direction: row;
+        max-width: 300px;
+    }
+
+    .introduce .card img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+    
+    /* voicesセクション */
+    .voices .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .voices .container .content {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .QA .text_area{
+        padding-top: 0px;
+    }
+
+    .QA .list{
+        gap: 20px;
+    }
+    
+    /* CTAセクション */
+    .CTA {
+        border-radius: 30px 30px 0 0;
+    }
+
+    .CTA .cta_btns button{
+        width: 300px;
+    }
+    
+    .CTA .cta_btns button a {
+        font-size: 18px;
+        padding: 12px 30px;
+    }
+    
+    /* 無限スライドショー */
+    .slideshow-container {
+        height: 300px;
+        gap: 10px;
+    }
+    
+    .slideshow-track {
+        height: 140px;
+    }
+    
+    .slide-item {
+        width: 150px;
+        height: 140px;
+        margin-right: 10px;
+    }
+    
+    .slideshow-track-top {
+        animation: slideLeft 30s linear infinite;
+        width: 100%;
+    }
+    
+    .slideshow-track-bottom {
+        animation: slideRight 30s linear infinite;
+        width: 100%;
+    }
+    
+    /* アクセント数字のサイズ調整 */
+    .accent {
+        font-size: 32px;
+    }
+    
+    /* フローティングCTA */
+    .floating-cta {
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    .floating-cta-button {
+        padding: 12px 20px;
+        font-size: 16px;
+        min-width: 140px;
+    }
+    
+    /* スマホサイズでのみ改行を表示 */
+    .mobile-br {
+        display: inline; /* スマホサイズで表示 */
+    }
+}

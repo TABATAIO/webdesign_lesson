@@ -1,0 +1,536 @@
+/* ==================================================
+   Sections - セクション別スタイル
+   ==================================================
+   各セクションのレイアウトとデザイン
+   ================================================== */
+
+/* ================================================== 
+   First View Section - ファーストビュー
+   ================================================== */
+.fv {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.hero {
+    width: 60%;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.fv .text_area {
+    width: 40%;
+    background-image: url('../img/mokume_dark.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    padding-top: 120px;
+    gap: 100px;
+}
+
+.text_area .title {
+    position: relative;
+    width: 100%;
+}
+
+.main_title {
+    font-size: 48px;
+    width: 150%;
+    background: var(--main-bg);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 30px 0 0 30px;
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+    color: var(--cta-bg);
+}
+
+.sub_title {
+    font-size: 32px;
+    width: 150%;
+    background: var(--main-bg);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 30px 0 0 30px;
+    position: absolute;
+    right: 0;
+    top: -80px;
+    color: var(--cta-bg);
+}
+
+.cta_btn {
+    margin-top: 40px;
+}
+
+.cta_button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: var(--cta-bg);
+    color: white;
+    text-decoration: none;
+    border-radius: 15px 0 0 15px;
+    font-size: 36px;
+    transition: opacity 0.3s ease;
+}
+
+.cta_button:hover {
+    opacity: 0.9;
+}
+
+/* ================================================== 
+   About Section - 会社概要
+   ================================================== */
+.about {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    gap: 0;
+    background-color: var(--sub-bg);
+    overflow: hidden;
+}
+
+.about img {
+    display: block;
+}
+
+.complain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 100px;
+    background-image: url('../img/AdobeStock_588281662_Preview.png');
+    background-size: cover;
+}
+
+.complain .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.complain .text h1 {
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+}
+
+.complain .cards {
+    display: flex;
+    gap: 40px;
+    padding: 10px;
+}
+
+.complain .card {
+    border: var(--main-txt) 1px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background: var(--main-bg);
+}
+
+/* ================================================== 
+   What Section - サービス比較
+   ================================================== */
+.what {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 100px;
+    gap: 80px;
+    background-color: var(--sub-bg);
+}
+
+.what .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.what .text h1 {
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+}
+
+.what .container {
+    width: 100%;
+    display: flex;
+    gap: 45px;
+}
+
+.what .container .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.what .container .content .compair {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.content .title {
+    text-align: center;
+    width: 100%;
+    background: var(--main-bg);
+}
+
+.we, .other {
+    width: 100%;
+    padding: 20px;
+}
+
+.we, .other h2 {
+    text-align: center;
+}
+
+.we p, .other p {
+    font-size: 16px !important;
+}
+
+.we {
+    background: #EDCACA;
+}
+
+.other {
+    background: #CAD9ED;
+}
+
+.divider {
+    display: inline-block;
+    width: 3px;
+    background-color: #333;
+}
+
+/* ================================================== 
+   Why Section - 選ばれる理由
+   ================================================== */
+.why {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 100px;
+    background-color: var(--main-bg);
+}
+
+.why .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.why .title h1 {
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+}
+
+.why .cards {
+    display: flex;
+    gap: 40px;
+    padding: 10px;
+}
+
+.why .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background: var(--sub-bg);
+}
+
+.why .card img {
+    width: 100%;
+    height: 75%;
+    display: block;
+}
+
+.why .card .text {
+    height: 25%;
+    padding: 20px;
+}
+
+.why .card .text h2 {
+    text-align: center;
+}
+
+.why .card .text p {
+    text-align: left;
+}
+
+/* ================================================== 
+   Introduce Section - 職人紹介
+   ================================================== */
+.introduce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 100px;
+    gap: 80px;
+    background-color: var(--sub-bg);
+}
+
+.introduce .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.introduce .title h1 {
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+}
+
+.introduce .cards {
+    display: flex;
+    gap: 40px;
+    padding: 10px;
+}
+
+.introduce .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background: var(--main-bg);
+}
+
+.introduce .card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.introduce .card .text {
+    height: 25%;
+    padding: 10px 15px;
+}
+
+.introduce .card .text h2 {
+    margin: 0;
+}
+
+/* ================================================== 
+   Voices Section - お客様の声
+   ================================================== */
+.voices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 100px;
+    gap: 80px;
+    background-color: var(--main-bg);
+}
+
+.voices .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.voices .title h1 {
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+}
+
+.voices .container {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.voices .container .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+    background: var(--sub-bg);
+    border-radius: 15px;
+    padding: 10px 20px 15px 20px;
+}
+
+.voices .container .content .h2, .voices .container .content p {
+    margin: 0;
+}
+
+/* ================================================== 
+   Example Section - 制作事例（無限スライドショー）
+   ================================================== */
+.example {
+    padding: 80px 0;
+    background-color: var(--sub-bg);
+    overflow: hidden;
+}
+
+.example .title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.slideshow-container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.slideshow-track {
+    display: flex;
+    width: 200%; /* 2倍幅で無限ループ */
+    height: 280px;
+}
+
+.slideshow-track-top {
+    animation: slideLeft 60s linear infinite; /* 左から右へのアニメーション */
+}
+
+.slideshow-track-bottom {
+    animation: slideRight 60s linear infinite; /* 右から左へのアニメーション */
+}
+
+.slide-item {
+    flex-shrink: 0; /* スライドアイテムの縮小を防止 */
+    width: 300px;
+    height: 280px;
+    margin-right: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slide-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.slide-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ホバー時にアニメーション一時停止 */
+.slideshow-container:hover .slideshow-track {
+    animation-play-state: paused;
+}
+
+/* ================================================== 
+   QA Section - よくある質問
+   ================================================== */
+.QA {
+    padding: 0px 0px 80px 100px;
+    background-color: var(--main-bg);
+    display: flex;
+    justify-content: space-between;
+}
+
+.QA .text_area {
+    padding-top: 80px;
+}
+
+.QA .text_area .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.QA .text_area h1 {
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+}
+
+.QA .list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.QA .list .item {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.QA .list .item h2 {
+    background-color: #EFEFEF;
+    margin: 0;
+    padding: 30px 20px;
+}
+
+.QA .list .item p {
+    background-color: #fff;
+    margin: 0;
+    padding: 30px 20px;
+}
+
+/* ================================================== 
+   CTA Section - お問い合わせ
+   ================================================== */
+.CTA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    background-image: url(../img/mokume_dark.png);
+    color: white;
+    border-radius: 100px 100px 0 0;
+    padding: 80px 100px;
+}
+
+.CTA .cta_btns button {
+    margin-top: 20px;
+    background-color: var(--cta-bg);
+}
+
+.CTA .cta_btns button a {
+    display: inline-block;
+    padding: 15px 40px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px 0 0 15px;
+    font-size: 24px;
+    transition: opacity 0.3s ease;
+}
+
+/* CTAボタンに矢印を追加 */
+.CTA .cta_btns button a::after {
+    content: "＞";
+    margin-left: 8px;
+    font-size: 1em;
+}
